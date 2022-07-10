@@ -19,6 +19,7 @@ public class Task4 {
             Texts.ArrayOutput(arr);
         }
 
+        //Решение
         int sum = 0;
         int count = 0;
         for(int i=0;i<5;i++){

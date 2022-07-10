@@ -18,6 +18,7 @@ public class Task2 {
             Texts.ArrayOutput(arr);
         }
 
+        //Решение
         int sum = 0;
         for(int i=0;i<5;i++){
             sum+=arr[i][i];

@@ -22,6 +22,8 @@ public class Task6 {
             Texts.ArrayOutput(nums);
 
         }
+
+        //Решение
         min = nums[0];
         count = 1;
         index.add(0);

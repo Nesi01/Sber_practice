@@ -9,7 +9,6 @@ public class Input {
     public static void waitEnter() {
         System.out.println("Нажмите Enter для продолжения");
         try {
-            //System.in.read();
             Input.str();
         } catch (Exception e) {
 
@@ -58,7 +57,7 @@ public class Input {
     //a,b - размерность массива, c - максимальное значение элементов
     public static int[][] randArrayTwoDim(int a, int b, int c) {
         int[][] arr = new int[a][b];
-        int[] arr1 = new int[b];
+        int[] arr1;
         for (int i = 0; i < a; i++) {
             arr1 = Input.randArray(b, c);
             System.arraycopy(arr1, 0, arr[i], 0, b);
@@ -81,16 +80,12 @@ public class Input {
                 if(i==str.length()-1) arr[j] = Integer.parseInt(buffer);
             }
             else {
-                //if(str.charAt(i)==' ' || str.charAt(i)=='\n') {
-                //if(str.charAt(i)==' ') {
                 arr[j] = Integer.parseInt(buffer);
                 buffer = "";
                 j++;
             }
 
         }
-        //System.out.println("Mssiv ");
-        //Texts.ArrayOutput(arr);
         return arr;
 
     }

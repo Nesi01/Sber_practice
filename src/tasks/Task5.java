@@ -11,6 +11,8 @@ public class Task5 {
         Texts.Task5();
         System.out.println("Введите три числа:");
         nums = Input.arrayOne(n);
+
+        //Решение
         min = nums[0];
         count = 1;
         for(int i=1;i<n;i++) {
